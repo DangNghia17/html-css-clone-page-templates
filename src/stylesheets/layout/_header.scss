@@ -1,0 +1,77 @@
+@use "../abstracts" as *;
+
+.container {
+  width: 100%;
+}
+
+.header_main {
+  width: 100%;
+  background-color: $background-color-dark;
+  @include flex($direction: row);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  height: 156px;
+  letter-spacing: 2px;
+
+  &_navigation {
+    @include flex($direction: row);
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &_navigation_logo {
+    color: $primary-color;
+    font-size: 36px;
+    margin-left: 200px;
+  }
+}
+
+.menu {
+  @include flex($direction: row);
+  margin-right: 250px;
+  align-items: center;
+  &_list {
+    @include flex($direction: row);
+
+    &_item {
+      @include flex($direction: row);
+      margin-right: 40px;
+
+      a {
+        color: $text-color-white;
+        font-size: 18px;
+        margin: 0 10px;
+
+      }
+    }
+  }
+
+  &_action {
+    button {
+      margin-left: auto;
+      font-size: 18px;
+      color: $text-color-white;
+      text-decoration: none;
+      padding: 12px;
+      border: 3px solid $text-color-white;
+      background-color: transparent;
+      border-radius: 100px;
+      width: 200px;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: $text-color-white;
+        color: $background-color-dark;
+        cursor: pointer;
+      }
+
+      &:active {
+        opacity: 0.8;
+        cursor: pointer;
+
+      }
+    }
+  }
+}

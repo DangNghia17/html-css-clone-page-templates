@@ -4,15 +4,16 @@
 $primary-font: Roboto;
 
 // Breakpoints
-
 $medium: 768px;
-$extra-lager: 1200px;
-
+$extra-large: 1200px;
 $mobile: calc($medium - 1px);
-$tablet: calc($extra-lager - 1px);
+$tablet: calc($extra-large - 1px);
 
 // Colors
-$primary-color: #ebcb80;
-$background-color: #ffffff;
-$text-color: #4b4b4b;
+$primary-color: #EBCB80;
+$background-color-white: #FFFFFF;
+$background-color-dark: #4B4B4B;
+$text-color-white: #FFFFFF;
+$text-color-dark: #4B4B4B;
 $main-spacing: pxToRem(-0.58);
+

@@ -39,7 +39,7 @@
 
 // Background image
 
-@mixin bg-img($bg: "") {
+@mixin background-img($bg: "") {
   background-image: url($bg);
   background-repeat: no-repeat;
   background-position: center;

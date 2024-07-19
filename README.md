@@ -4,7 +4,7 @@
 
 ## TIMELINE:
 
-- 1 days (Oct 15 - Oct 16)
+- 14 days (Jul 17 2024 - Jul 31 2024)
 
 ## TARGET:
 
@@ -22,7 +22,7 @@
 
 ## WEB DESIGN:
 
-- [Design](https://www.figma.com/file/HGf2Vzkk3YieUGPIpmW7dm/Hofmann-UI-Kit---2?node-id=5033%3A3)
+- [Design](https://www.figma.com/design/JhGap6vIL5l8t4hz5OF6sz/Hofmann-UI-Kit---Page-Templates-(Copy)-(Copy)?node-id=0-663&t=PJjMjng9EnlNYVfl-0)
 
 ## SOURCE CODE
 
