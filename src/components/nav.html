@@ -3,17 +3,31 @@
   <div class="menu">
     <nav>
       <ul class="menu_list">
-        <include
-          src="./components/nav-list.html"
-          locals='{
+        <include src="./components/nav-list.html" locals='{
             "classList":"menu_list_item",
             "list": "[`MISSION`, `SERVICES`, `ABOUT`]"
-          }'
-        ></include>
+          }'></include>
       </ul>
     </nav>
     <div class="menu_action">
-        <button>TAKE A TOUR</button>
+      <a class="button_mobile" id="toggle">
+        <img src="../assets/icons/hamburger-menu.svg" alt="Search" class="hamburger_menu_mobile" />
+      </a>
+      <button>TAKE A TOUR</button>
     </div>
+
   </div>
 </div>
+<script>
+  document.getElementById('toggle').addEventListener('click', function () {
+    var nav = document.querySelector('nav');
+    var ul = nav.querySelector('ul');
+    if (ul.style.visibility === 'visible') {
+      ul.style.visibility = 'hidden';
+      ul.style.backgroundColor = 'white';
+    } else {
+      ul.style.visibility = 'visible';
+      ul.style.backgroundColor = '#434343';
+    }
+  });
+</script>
