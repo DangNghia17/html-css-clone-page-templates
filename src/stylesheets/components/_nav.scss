@@ -2,7 +2,7 @@
 
 .menu {
     @include flex($direction: row);
-    margin-right: 250px;
+    margin-right: 100px;
     align-items: center;
 
     &_list {
