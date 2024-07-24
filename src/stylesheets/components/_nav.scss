@@ -38,9 +38,9 @@
             color: $text-color-white;
             text-decoration: none;
             padding: 12px;
-            border: 3px solid $background-color-white;
+            border: 2px solid $background-color-white;
             background-color: transparent;
-            border-radius: 100px;
+            border-radius: 30px;
             width: 200px;
             letter-spacing: 1px;
 
@@ -53,7 +53,6 @@
             &:active {
                 opacity: 0.8;
                 cursor: pointer;
-
             }
         }
 
@@ -63,7 +62,6 @@
     }
 }
 
-// Responsive for tablet
 @media (max-width: $tablet) {
     .header_main {
         padding: 10px 20px;
@@ -102,7 +100,6 @@
     }
 }
 
-// Responsive for mobile
 @media (max-width: $mobile) {
 
     .header_main {
@@ -147,7 +144,6 @@
 
                 a {
                     font-size: 20px;
-
                 }
 
             }
