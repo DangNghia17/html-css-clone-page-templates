@@ -14,7 +14,7 @@
 
             a {
                 color: $text-color-white;
-                font-size: 18px;
+                font-size: 16px;
                 margin: 0 10px;
 
                 &:hover {
@@ -34,14 +34,14 @@
     &_action {
         button {
             margin-left: auto;
-            font-size: 18px;
+            font-size: 16px;
             color: $text-color-white;
             text-decoration: none;
             padding: 12px;
             border: 2px solid $background-color-white;
             background-color: transparent;
             border-radius: 30px;
-            width: 200px;
+            width: 180px;
             letter-spacing: 1px;
 
             &:hover {
@@ -152,9 +152,8 @@
         &_action {
             button {
                 display: none;
+                width: 30px;
             }
-
-            width: 30px;
         }
 
         .button_mobile {
