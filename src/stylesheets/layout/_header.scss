@@ -8,9 +8,7 @@
 .header_main {
   width: 100%;
   background-color: $background-color-dark;
-  @include flex($direction: row);
-  justify-content: space-between;
-  align-items: center;
+  @include flex($direction: row, $justify: space-between, $align: center);
   padding: 20px 40px;
   height: 156px;
   letter-spacing: 2px;
@@ -25,5 +23,273 @@
     color: $primary-color;
     font-size: 36px;
     margin-left: 200px;
+  }
+}
+
+
+.hero_section_main {
+  @include background-img("../assets/images/tablet/background-hero-section-tablet.png"
+  );
+  height: 768px;
+  @include flex($direction: column, $align: center);
+
+  &_title {
+    color: $text-color-dark;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 200px;
+  }
+
+  &_subtitle {
+    color: $text-color-dark;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  &_input_email_button_container {
+    @include flex($direction: row, $align: center);
+    padding-top: 30px;
+
+  }
+
+  &_input_email_container {
+    padding-top: 20px;
+  }
+
+  &_input_email {
+    background: transparent;
+    width: 270px;
+    height: 48px;
+    border: 1px solid $background-color-dark;
+    border-radius: 4px;
+    padding-left: 15px;
+    opacity: 80%;
+    font-size: 16px;
+  }
+
+  &_button_container {
+    padding-top: 20px;
+  }
+
+  button {
+    font-size: 13px;
+    color: $text-color-dark;
+    border: 2px solid $background-color-dark;
+    background-color: transparent;
+    border-radius: 100px;
+    width: 198px;
+    height: 48px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 20px;
+
+    &:hover {
+      background-color: $background-color-white;
+      color: $text-color-dark;
+      cursor: pointer;
+      border: 2px solid $background-color-dark;
+    }
+
+    &:active {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .icon_hero_section {
+    width: 80px;
+    height: 80px;
+
+    &_container {
+      @include flex($direction: row, $justify: space-between, $align: center);
+      width: 400px;
+      padding-top: 90px;
+    }
+  }
+}
+
+
+
+@media (max-width: $tablet) {
+  .hero_section_main {
+    @include background-img("../assets/images/tablet/background-hero-section-tablet.png"
+    );
+    height: 566px;
+    @include flex($direction: column, $align: center);
+
+    &_title {
+      color: $text-color-dark;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: center;
+      padding-top: 115px;
+      width: 405px;
+    }
+
+    &_subtitle {
+      color: $text-color-dark;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    &_input_email_button_container {
+      @include flex($direction: row, $align: center);
+    }
+
+    &_input_email_container {
+      padding-top: 20px;
+    }
+
+    &_input_email {
+      background: transparent;
+      width: 228px;
+      height: 40px;
+      border: 1px solid $background-color-dark;
+      border-radius: 4px;
+      padding-left: 15px;
+      opacity: 80%;
+    }
+
+    &_button_container {
+      padding-top: 20px;
+    }
+
+    button {
+      font-size: 13px;
+      color: $text-color-dark;
+      border: 2px solid $background-color-dark;
+      background-color: transparent;
+      border-radius: 100px;
+      width: 140px;
+      height: 40px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-left: 20px;
+
+      &:hover {
+        background-color: $background-color-white;
+        color: $text-color-dark;
+        cursor: pointer;
+        border: 2px solid $background-color-dark;
+      }
+
+      &:active {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+
+    .icon_hero_section {
+      width: 64px;
+      height: 64px;
+
+      &_container {
+        @include flex($direction: row, $justify: space-between, $align: center);
+        width: 360px;
+        padding-top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .hero_section_main {
+    @include background-img("../assets/images/mobile/background-hero-section-mobile.png"
+    );
+    height: 460px;
+    @include flex($direction: column, $align: center);
+
+    &_title {
+      color: $text-color-dark;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      padding-top: 125px;
+      width: 220px;
+    }
+
+    &_subtitle {
+      color: $text-color-dark;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    input::placeholder {
+      color: #4b4b4b;
+      border-color: black;
+    }
+
+    &_input_email_button_container {
+      @include flex($direction: column, $align: center);
+      padding-top: 0;
+    }
+
+    &_input_email_container {
+      padding-top: 20px;
+    }
+
+    &_input_email {
+      background: transparent;
+      width: 190px;
+      height: 32px;
+      border: 1px solid $background-color-dark;
+      border-radius: 4px;
+      padding-left: 15px;
+      opacity: 80%;
+      font-size: 12px;
+    }
+
+    &_button_container {
+      padding-top: 20px;
+    }
+
+    button {
+      font-size: 13px;
+      color: $text-color-dark;
+      border: 2px solid $background-color-dark;
+      background-color: transparent;
+      border-radius: 100px;
+      width: 190px;
+      height: 32px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-right: 20px;
+
+      &:hover {
+        background-color: $background-color-white;
+        color: $text-color-dark;
+        cursor: pointer;
+        border: 2px solid $background-color-dark;
+      }
+
+      &:active {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+
+    .icon_hero_section_container {
+      @include flex($direction: row, $justify: space-between, $align: center);
+      width: 200px;
+      padding-top: 30px;
+    }
+
+    .icon_hero_section {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
