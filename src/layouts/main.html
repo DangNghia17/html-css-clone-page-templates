@@ -1,0 +1,32 @@
+<!-- Choose your plan section -->
+<p class="plan_title">Choose Your Plan</p>
+
+<div class="card_container">
+    <div class="plan_card primary">
+        <include src="./components/card.html" locals='{
+                "name_type": "SILVER",
+                "price": "49",
+                "account_type": "Pesonal",
+                "discspace_type": "25",
+                "uploads_per_day": "50"}'>
+        </include>
+    </div>
+    <div class="plan_card secondary">
+        <include src="./components/card.html" locals='{
+                "name_type": "GOLD ",
+                "price": "99",
+                "account_type": "Pesonal",
+                "discspace_type": "50",
+                "uploads_per_day": "500"}'>
+        </include>
+    </div>
+    <div class="plan_card dark">
+        <include src="./components/card.html" locals='{
+                "name_type": "PLATINUM",
+                "price": "299",
+                "account_type": "Team",
+                "discspace_type": "500",
+                "uploads_per_day": "Unlimited"}'>
+        </include>
+    </div>
+</div>
