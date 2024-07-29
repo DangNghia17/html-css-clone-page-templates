@@ -1,0 +1,129 @@
+@use "../../abstracts" as *;
+
+.carousel {
+    &_container {
+        color: $text-color-dark;
+        padding: 60px 80px;
+        margin-left: 50px;
+        margin-right: 50px;
+        @include flex($direction: column, $align: center);
+
+        @media (max-width: $tablet) {
+            @include flex($direction: column, $justify: space-between, $align: center);
+            padding: 60px 0;
+        }
+
+        @media (max-width: $mobile) {
+            padding: 40px 0;
+        }
+
+        .dot_nav {
+            padding-top: 40px;
+            width: 10%;
+
+            @media (max-width: $tablet) {
+                padding-top: 20px;
+                width: 10%;
+            }
+
+            @media (max-width: $mobile) {
+                padding-top: 20px;
+                width: 25%;
+            }
+        }
+    }
+
+    &_image {
+        width: 180px;
+        height: 180px;
+        border: 2px solid $primary-color;
+        border-radius: 50%;
+
+        @media (max-width: $tablet) {
+            width: 112px;
+            height: 112px;
+        }
+
+        @media (max-width: $mobile) {
+            width: 92px;
+            height: 92px;
+        }
+    }
+
+    &_content_container {
+        @include flex($direction: row, $align: center, $justify: space-between);
+        padding-top: 20px;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        @media (max-width: $mobile) {
+            margin: 0;
+        }
+
+        .prev_icon,
+        .next_icon {
+            visibility: visible;
+            cursor: pointer;
+
+            &:active {
+                opacity: 0.7;
+            }
+
+            &:hover {
+                border: 1px solid $background-color-dark;
+                border-radius: 50%;
+            }
+
+            @media (max-width: $tablet) {
+                visibility: hidden;
+            }
+
+            @media (max-width: $mobile) {
+                display: none;
+            }
+        }
+
+        @media (max-width: $mobile) {
+            padding-top: 10px;
+        }
+    }
+
+    &_title_container {
+        @include flex($direction: column, $align: center);
+        width: 50%;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
+    }
+
+    &_title {
+        font-size: 16px;
+
+        @media (max-width: $mobile) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &_text {
+        font-size: 16px;
+        padding-top: 15px;
+
+        @media (max-width: $tablet) {
+            font-size: 13px;
+            padding-top: 15px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 11px;
+            line-height: 16px;
+            padding-top: 15px;
+        }
+    }
+}
