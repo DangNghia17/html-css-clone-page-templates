@@ -19,7 +19,7 @@
 
                 &:hover {
                     color: $text-color-primary;
-                    cursor: pointer;
+                    cursor: pointer;  
                 }
 
                 &:active {
@@ -43,18 +43,21 @@
             border-radius: 30px;
             width: 200px;
             letter-spacing: 1px;
-
+            background-size: 200% 100%;
+            background-image: linear-gradient(to left, $background-color-white 50%, transparent 50%);
+            transition: background-position 1s, color 0.4s;
+          
             &:hover {
-                background-color: $background-color-white;
-                color: $text-color-dark;
-                cursor: pointer;
+              background-position: 100% 50%;
+              color: $text-color-dark;
+              cursor: pointer;
             }
-
+          
             &:active {
-                opacity: 0.8;
-                cursor: pointer;
+              opacity: 0.8;
+              cursor: pointer;
             }
-        }
+          }
 
         .button_mobile {
             visibility: hidden;
