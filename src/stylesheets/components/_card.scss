@@ -32,14 +32,18 @@
         padding: 15px 50px;
         background-color: $primary-color;
         border: $primary-color;
-        letter-spacing: 1px;
+        letter-spacing: 1px;        
     }
 
     button {
+        transition: 0.5s;
+
         &:hover {
             cursor: pointer;
             background-color: $background-color-white;
             color: $text-color-dark;
+            transform: scale(1.1);
+            transform: translateY(-5px);       
         }
 
         &:active {
@@ -81,10 +85,13 @@
     }
 
     button {
+        transition: 0.5s;
         &:hover {
             cursor: pointer;
             background-color: $background-color-white;
             color: $text-color-dark;
+            transform: scale(1.1);
+            transform: translateY(-5px);
         }
 
         &:active {
@@ -122,10 +129,13 @@
     }
 
     button {
+        transition: 0.5s;
         &:hover {
             cursor: pointer;
             background-color: $background-color-white;
             color: $text-color-dark;
+            transform: scale(1.1);
+            transform: translateY(-5px); 
         }
 
         &:active {
