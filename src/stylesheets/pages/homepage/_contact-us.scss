@@ -104,10 +104,16 @@
     .location_container,
     .email_container,
     .phone_container {
+        transition: 0.5s;
+
         @include flex($direction: row);
         margin-top: 20px;
         @media (max-width: $tablet) {
             margin-top: 10px;
+        }
+        &:hover {
+            transform: scale(1.1);
+            transform: translateY(-3px);     
         }
     }
 
@@ -158,11 +164,16 @@
         border: 1px solid gray;
         margin: 15px 5px 20px 0px;
         font-size: 14px;
+        transition: 0.5s;
 
         @media (max-width: $tablet) {
             margin: 7px 5px 7px 0;
             padding: 7px 5px;
             width: 100%;
+        }
+        &:focus {
+            transform: scale(1.1);
+            transform: translateY(-2px);
         }
     }
 }
@@ -178,7 +189,8 @@
         border: $primary-color;
         letter-spacing: 1px;
         line-height: 18px;
-    
+        transition: 0.5s;
+
         @media (max-width: $tablet) {
             font-size: 11px;
             margin: 10px 0 30px;
@@ -194,6 +206,8 @@
             cursor: pointer;
             background-color: $background-color-dark;
             color: $text-color-white;
+            transform: scale(1.03);
+            transform: translateY(-3px);
         }
     
         &:active {
@@ -250,6 +264,14 @@
         @media (max-width: $mobile) {
             width: auto;
             gap: 10px;
+        }
+    }
+    .social_icon{
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
         }
     }
 }
