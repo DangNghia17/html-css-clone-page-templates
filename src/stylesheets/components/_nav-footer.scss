@@ -1,0 +1,114 @@
+@use "../abstracts/" as *;
+
+.bottom_footer {
+    background-color: $background-color-dark;
+    color: $text-color-white;
+    @include flex($direction: row, $justify: center, $align: center);
+
+    @media (max-width: $tablet) {
+        @include flex($direction: row, $justify: space-between, $align: center);
+    }
+}
+
+.container_bottom_footer {
+    @include flex($direction: row, $justify: space-around, $align: center);
+    padding: 20px 40px;
+    width: 70%;
+
+    @media (max-width: $tablet) {
+        @include flex($direction: row, $justify: flex-start, $align: center);
+        width: 90%;
+        padding: 0;
+    }
+
+    @media (max-width: $mobile) {
+        @include flex($direction: column-reverse, $justify: flex-start, $align: flex-start, $wrap: wrap);
+    }
+
+    .copyright {
+        opacity: 0.7;
+
+        @media (max-width: $mobile) {
+            padding-top: 10px;
+        }
+    }
+
+    .nav_footer {
+        @include flex($direction: row);
+
+        @media (max-width: $tablet) {
+            width: 60%;
+            margin-left: 60px;
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            margin-left: -10px;
+        }
+    }
+
+    .menu_list_footer {
+        @include flex($direction: row);
+
+        .menu_list_footer_item {
+            @include flex($direction: row);
+            margin-right: 40px;
+            letter-spacing: 1px;
+
+            @media (max-width: $tablet) {
+                font-size: 11px;
+                margin-right: 0;
+            }
+
+            @media (max-width: $tablet) {
+                font-size: 11px;
+                margin-right: -4px;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    a {
+        color: $text-color-white;
+        font-size: 16px;
+        margin: 0 10px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        @media (max-width: $tablet) {
+            font-size: 11px;
+        }
+
+        &:hover {
+            color: $text-color-primary;
+            cursor: pointer;
+        }
+
+        &:active {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.on_top_link {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 9%;
+
+    @media (max-width: $tablet) {
+        width: 4%;
+        padding-top: 3px;
+    }
+
+    @media (max-width: $mobile) {
+        padding-top: 35px;
+        padding-right: 30px;
+    }
+
+    .on_top_icon {
+        @media (max-width: $tablet) {
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
