@@ -48,6 +48,14 @@
                     width: 19px;
                     height: 19px;
                 }
+                .footer_icons{
+                    transition: 0.5s;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        transform: translateY(-10px);
+                    }
+                }
             }
         }
 
