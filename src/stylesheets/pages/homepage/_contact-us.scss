@@ -26,7 +26,7 @@
     }
 }
 
-.container {
+.container_contact_us {
     @include flex($direction: row, $justify: center, $align: flex-start);
 
     @media (max-width: $tablet) {
@@ -169,6 +169,38 @@
 
 .button_form {
     text-align: center;
+    button {
+        padding: 15px 60px;
+        background-color: $primary-color;
+        color: $text-color-dark;
+        border-radius: 30px;
+        font-size: 16px;
+        border: $primary-color;
+        letter-spacing: 1px;
+        line-height: 18px;
+    
+        @media (max-width: $tablet) {
+            font-size: 11px;
+            margin: 10px 0 30px;
+            padding: 10px 50px;
+        }
+    
+        @media (max-width: $mobile) {
+            font-size: 11px;
+            margin: 10px 0 0;
+        }
+    
+        &:hover {
+            cursor: pointer;
+            background-color: $background-color-dark;
+            color: $text-color-white;
+        }
+    
+        &:active {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
 }
 
 .credit_follow_container {
@@ -226,35 +258,4 @@ textarea {
     resize: none;
 }
 
-button {
-    padding: 15px 60px;
-    background-color: $primary-color;
-    color: $text-color-dark;
-    border-radius: 30px;
-    font-size: 16px;
-    border: $primary-color;
-    letter-spacing: 1px;
-    line-height: 18px;
 
-    @media (max-width: $tablet) {
-        font-size: 11px;
-        margin: 10px 0 30px;
-        padding: 10px 50px;
-    }
-
-    @media (max-width: $mobile) {
-        font-size: 11px;
-        margin: 10px 0 0;
-    }
-
-    &:hover {
-        cursor: pointer;
-        background-color: $background-color-dark;
-        color: $text-color-white;
-    }
-
-    &:active {
-        cursor: pointer;
-        opacity: 0.8;
-    }
-}
