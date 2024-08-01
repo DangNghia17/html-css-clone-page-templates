@@ -52,7 +52,12 @@
     img {
         width: auto;
         height: auto;
+        transition: 1s;
 
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
         @media (max-width: $tablet) {
             width: 192px;
             height: 192px;

@@ -10,6 +10,13 @@
         &_item {
             list-style: none;
             padding: 10px 20px;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+                transform: translateY(-5px);
+                cursor: pointer;                
+            }
         }
 
         @media (max-width: $tablet) {
