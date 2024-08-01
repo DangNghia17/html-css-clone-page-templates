@@ -84,12 +84,17 @@
         border: $primary-color;
         margin-bottom: 20px;
         font-size: 14px;
+        transition: 0.7s;
 
         @media (max-width: $tablet) {
             width: 80%;
             margin-bottom: 15px;
             padding: 10px 10px;
             font-size: 11px;
+        }
+        &:focus {
+            transform: scale(1.1);
+            transform: translateY(-3px);
         }
     }
 
@@ -114,7 +119,13 @@
         letter-spacing: 1px;
         line-height: 18px;
         margin: 30px 0 30px 0;
+        transition: 0.5s;
 
+        &:hover{
+            transform: scale(1.1);
+            transform: translateY(-5px);
+            cursor: pointer;            
+        }
         @media (max-width: $tablet) {
             font-size: 13px;
             margin: 10px 0 30px 0;
