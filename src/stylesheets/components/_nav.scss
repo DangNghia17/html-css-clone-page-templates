@@ -2,7 +2,6 @@
 
 .menu {
     @include flex($direction: row);
-    margin-right: 250px;
     align-items: center;
 
     &_list {
