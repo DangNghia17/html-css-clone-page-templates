@@ -1,0 +1,67 @@
+@use "../../abstracts" as *;
+
+.card_container {
+    color : $text-color-white;
+    background-color: $background-color-dark;
+    @include flex($direction: row, $justify: center, $align: center);
+    text-align: center;
+    padding: 0 50px;
+
+    @media (max-width: $tablet) {
+        @include flex($direction: row, $justify: space-between, $align: center);
+        padding: 0 30px;
+    }
+
+    @media (max-width: $mobile) {
+        @include flex($direction: column, $justify: ce, $align: center);
+        padding: 0;
+    }
+}
+
+.advantages {
+    font-size: 44px;
+    line-height: 48px;
+    text-align: center;
+    padding: 40px 0 10px 0;
+    font-weight: 400;
+
+    @media (max-width: $tablet) {
+        font-size: 32px;
+        line-height: 40px;
+        padding-top: 30px;
+
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 20px;
+        line-height: 40px;
+        padding: 30px 0 20px 0;
+    }
+
+    &_section {
+        color : $text-color-white;
+        @include flex($direction: column, $align: center);
+        background-color: $background-color-dark;
+    }
+
+    &_text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding: 20px 0 30px 0;
+        width: 20%;
+        font-weight: 400;
+
+        @media (max-width: $tablet) {
+            font-size: 11px;
+            width: 55%;
+            padding: 0 0 10px 0;
+        }
+
+        @media (max-width: $mobile) {
+            line-height: 16px;
+            padding-top: 0;
+            width: 75%;
+        }
+    }
+}

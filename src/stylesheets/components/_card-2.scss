@@ -1,0 +1,116 @@
+@use "../abstracts/" as *;
+
+.card_content {
+    background-color: $background-color-dark;
+    background-image: linear-gradient(to right, #2d2d2d, $background-color-dark);
+    background-repeat: no-repeat;
+    box-shadow: -8px 11px 8px #0003, 19px 5px 20px #00000030;
+    border-radius: 5px;
+    width: 22%;
+    margin: 0 20px 50px 20px;
+    transition: 0.5s;
+    
+    &:hover{
+        box-shadow: -8px 11px 8px #0003, 19px 5px 20px #00000030;
+        transform: scale(1.05);
+    }
+    @media (max-width: $tablet) {
+        width: 32%;
+        margin: 0 0 32px 0;
+    }
+
+    @media (max-width: $mobile) {
+        width: 75%;
+        margin-bottom: 32px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .name {
+        color: $text-color-primary;
+        padding-top: 40px;
+        padding-bottom: 25px;
+        font-family: 'Lucida Sans Unicode', sans-serif;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 1px;
+
+        @media (max-width: $tablet) {
+            font-size: 12px;
+            line-height: 16px;
+            padding-top: 20px;
+        }
+    }
+
+    .icon_card {
+        width: 59px;
+        height: 64px;
+
+        @media (max-width: $tablet) {
+            width: 50px;
+            height: 46px;
+        }
+    }
+
+    .title {
+        padding-top: 30px;
+
+        @media (max-width: $tablet) {
+            padding-top: 20px;
+            font-size: 11px;
+            line-height: 16px;
+        }
+
+        @media (max-width: $mobile) {
+            padding-top: 23px;
+        }
+    }
+
+    .description {
+        padding: 20px 60px;
+        margin: 0 30px;
+
+        @media (max-width: $tablet) {
+            font-size: 11px;
+            line-height: 16px;
+            padding: 20px 40px;
+            height: 70px;
+            margin: 0;
+        }
+
+        @media (max-width: $mobile) {
+            margin: 0;
+            padding: 10px 40px;
+        }
+    }
+
+    .card_type_button {
+        font-size: 16px;
+        margin: 10px 0 35px 0;
+        border-radius: 30px;
+        padding: 15px 50px;
+        background-color: $primary-color;
+        border: $primary-color;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        @media (max-width: $tablet) {
+            font-size: 11px;
+            margin-top: 10px;
+            padding: 12px 50px;
+        }
+    }
+
+    button {
+        &:hover {
+            cursor: pointer;
+            background-color: $background-color-white;
+            color: $text-color-dark;
+        }
+
+        &:active {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
