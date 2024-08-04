@@ -3,6 +3,7 @@
 .container {
   width: 100%;
   height: auto;
+  margin-left: 40px;
 }
 
 .header_main {
@@ -17,12 +18,39 @@
     @include flex($direction: row);
     justify-content: space-between;
     align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
   &_navigation_logo {
     color: $primary-color;
     font-size: 36px;
-    margin-left: 200px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: $tablet) {
+  .container {
+    margin-left: 0;
+  }
+
+  .header_main {
+    &_navigation {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .container {
+    margin-left: 0;
+  }
+
+  .header_main {
+    &_navigation {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }
 
@@ -54,11 +82,15 @@
   &_input_email_button_container {
     @include flex($direction: row, $align: center);
     padding-top: 30px;
-
   }
 
   &_input_email_container {
     padding-top: 20px;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 
   &_input_email {
@@ -87,6 +119,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-left: 20px;
+    transition: background-color 1s ease-out;
 
     &:hover {
       background-color: $background-color-white;
