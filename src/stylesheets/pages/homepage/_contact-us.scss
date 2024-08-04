@@ -231,19 +231,19 @@
         padding-bottom: 50px;
     }
 
-    .credit_container {
+    .credit {
         padding-bottom: 30px;
 
         @media (max-width: $mobile) {
             padding-bottom: 20px;
         }
 
-        .credit_description {
+        &_description {
             padding-top: 12px;
         }
     }
 
-    .follow_container {
+    .follow {
         @include flex($direction: column);
         gap: 30px;
 
@@ -252,7 +252,7 @@
         }
     }
 
-    .social_container {
+    .social_icons {
         @include flex($direction: row, $wrap: wrap);
         width: 60%;
         gap: 30px;
