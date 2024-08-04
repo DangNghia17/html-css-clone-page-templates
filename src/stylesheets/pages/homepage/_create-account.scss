@@ -2,7 +2,7 @@
 
 .create_account_section {
     @include background-img("../assets/images/desktop/background_create_an_account.png");
-    padding: 20px 20%;
+    padding: 60px 20%;
     text-align: center;
 
     @media (max-width: $tablet) {
