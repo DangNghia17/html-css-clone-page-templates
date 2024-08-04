@@ -1,2 +1,5 @@
 @use "../abstracts/" as *;
 @forward "nav";
+@forward "card";
+@forward "profile";
+@forward "loader";

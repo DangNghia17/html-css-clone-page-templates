@@ -1,3 +1,76 @@
+<section class="our_team">
+    <p class="our_team_title">Our Team</p>
+    <div class="our_team_container">
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-1.png",
+        "profileName": "Craig Todd",
+        "profileRole": "CEO",
+        "profileDesc": "Like the majority of sales people, I visit a huge number of clients and prospects every month"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-2.png",
+        "profileName": "Jennie Graham",
+        "profileRole": "UX/UI Designer",
+        "profileDesc": "WordPress Version 2 0 3 Review"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-3.png",
+        "profileName": "Chase Meyer",
+        "profileRole": "Front-end Developer",
+        "profileDesc": "Search Engine Optimization And Advertising"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-4.png",
+        "profileName": "Vera Hopkins",
+        "profileRole": "UX Lead",
+        "profileDesc": "Differentiate Yourself And Attract More Attention Sales And Profits"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-5.png",
+        "profileName": "Eunice Wong",
+        "profileRole": "Marketing consultant",
+        "profileDesc": "Advertising Internet Online Opportunities To Explore"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-6.png",
+        "profileName": "Johnny Vargas",
+        "profileRole": "Back-end Developer",
+        "profileDesc": "Maintain Your PC S Performance With PC Programs"
+    }'></include>
+</div>
+</section>
+<!-- Choose your plan section -->
+<p class="plan_title">Choose Your Plan</p>
+
+<div class="card_container">
+    <div class="plan_card primary">
+        <include src="./components/card.html" locals='{
+                "name_type": "SILVER",
+                "price": "49",
+                "account_type": "Pesonal",
+                "discspace_type": "25",
+                "uploads_per_day": "50"}'>
+        </include>
+    </div>
+    <div class="plan_card secondary">
+        <include src="./components/card.html" locals='{
+                "name_type": "GOLD ",
+                "price": "99",
+                "account_type": "Pesonal",
+                "discspace_type": "50",
+                "uploads_per_day": "500"}'>
+        </include>
+    </div>
+    <div class="plan_card dark">
+        <include src="./components/card.html" locals='{
+                "name_type": "PLATINUM",
+                "price": "299",
+                "account_type": "Team",
+                "discspace_type": "500",
+                "uploads_per_day": "Unlimited"}'>
+        </include>
+    </div>
+</div>
 <!-- Carousel Section -->
 <div class="carousel_container">
     <img class="carousel_image" src="../assets/images/desktop/person-carousel.png" alt="hero-image" />
@@ -13,3 +86,4 @@
     </div>
     <img class="dot_nav" src="../assets/icons/dotnav.svg" alt="dot-nav-icon" />
 </div>
+
