@@ -22,11 +22,16 @@
 
 ## WEB DESIGN:
 
-- [Design](https://www.figma.com/design/JhGap6vIL5l8t4hz5OF6sz/Hofmann-UI-Kit---Page-Templates-(Copy)-(Copy)?node-id=0-663&t=PJjMjng9EnlNYVfl-0)
+- Design - 3 : [here](https://www.figma.com/design/JhGap6vIL5l8t4hz5OF6sz/Hofmann-UI-Kit---Page-Templates-(Copy)-(Copy)?node-id=0-663&t=PJjMjng9EnlNYVfl-0)
 
 ## SOURCE CODE
 
-- Step1: Clone project : git clone https://github.com/DangNghia17/html-css-clone-page-templates
+- Clone this project : 
+git clone https://github.com/DangNghia17/html-css-clone-page-templates
+
+- View demo : [demo here](https://html-css-clone-page-templates.vercel.app/)
+
+
 
 ## HOW TO RUN
 

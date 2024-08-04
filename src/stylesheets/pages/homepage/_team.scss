@@ -1,0 +1,60 @@
+@use "../../abstracts" as *;
+
+.our_team {
+    height: auto;
+        padding: 50px 0;;
+    &_container {
+        @include flex($direction: row, $align: start, $wrap : wrap, $justify: center);
+    }
+
+    &_title {
+        height: 40px;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: $tablet) {
+    .our_team {
+        height: auto;
+
+        &_container {
+            @include flex($direction: row, $align: start, $wrap : wrap, $justify: center);
+        }
+
+        &_title {
+            height: 40px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .our_team {
+        height: auto;
+
+        &_title {
+            height: 40px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 0px;
+
+            &_container {
+                @include flex($direction: row, $align: center, $wrap : wrap, $justify: center);
+            }
+        }
+    }
+}
