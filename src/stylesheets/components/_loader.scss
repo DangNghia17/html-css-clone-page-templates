@@ -1,0 +1,62 @@
+.id-loader {
+    --uib-size: 50px;
+    --uib-color: black;
+    --uib-speed: .8s;
+    --uib-bg-opacity: 0.1;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    transform-origin: center;
+    animation: rotate var(--uib-speed) linear infinite;
+    will-change: transform;
+    overflow: visible;
+  }
+  
+  .car {
+    fill: none;
+    stroke: var(--uib-color);
+    stroke-dasharray: 25, 75;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    transition: stroke 0.5s ease;
+  }
+  
+  .track {
+    fill: none;
+    stroke: var(--uib-color);
+    opacity: var(--uib-bg-opacity);
+    transition: stroke 0.5s ease;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 100;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #loader.fade-out {
+    opacity: 0;
+  }
+  .content {
+    transition: 0.5s;
+    display: none;
+  }
+  
+  .content.show {
+    transition: 0.5s;
+    display: block;
+  }
+  
