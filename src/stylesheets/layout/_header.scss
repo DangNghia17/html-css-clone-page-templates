@@ -119,13 +119,14 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-left: 20px;
-    transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out , all 0.5s;
 
     &:hover {
       background-color: $background-color-white;
       color: $text-color-dark;
       cursor: pointer;
       border: 2px solid $background-color-dark;
+      transform: translateY(-3px);
     }
 
     &:active {
