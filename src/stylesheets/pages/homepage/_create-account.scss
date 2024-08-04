@@ -1,0 +1,152 @@
+@use "../../abstracts" as *;
+
+.create_account_section {
+    @include background-img("../assets/images/desktop/background_create_an_account.png");
+    padding: 20px 20%;
+    text-align: center;
+
+    @media (max-width: $tablet) {
+        @include background-img("../assets/images/tablet/background_create_an_account.png");
+    }
+
+    @media (max-width: $mobile) {
+        @include background-img("../assets/images/mobile/background_create_an_account.png");
+        padding: 0;
+    }
+
+    .container {
+        @include flex($direction: column, $justify: center, $align: center);
+        padding-top: 70px;
+        padding-bottom: 48px;
+
+        @media (max-width: $tablet) {
+            padding-top: 40px;
+        }
+    }
+
+    .title {
+        font-size: 44px;
+        line-height: 48px;
+        padding-bottom: 36px;
+
+        @media (max-width: $tablet) {
+            font-size: 32px;
+            line-height: 40px;
+            padding-bottom: 26px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 20px;
+        }
+    }
+
+    .form_container {
+        @include flex($direction: column, $justify: space-evenly, $align: center);
+        background-image: linear-gradient(to left, #707070, $background-color-dark);
+        width: 35%;
+        border-radius: 10px;
+
+        @media (max-width: $tablet) {
+            width: 65%;
+        }
+
+        @media (max-width: $mobile) {
+            width: 85%;
+        }
+    }
+
+    .title_form {
+        font-family: 'Lucida Sans Unicode', sans-serif;
+        font-size: 18px;
+        line-height: 27px;
+        color: $primary-color;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @media (max-width: $tablet) {
+            padding-top: 30px;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 12px;
+        }
+    }
+
+    .form_input {
+        background-color: $background-color-white;
+        padding: 13px 15px;
+        width: 78%;
+        opacity: 0.8;
+        border-radius: 5px;
+        border: $primary-color;
+        margin-bottom: 20px;
+        font-size: 14px;
+        transition: 0.7s;
+
+        @media (max-width: $tablet) {
+            width: 80%;
+            margin-bottom: 15px;
+            padding: 10px 10px;
+            font-size: 11px;
+        }
+        &:focus {
+            transform: scale(1.1);
+            transform: translateY(-3px);
+        }
+    }
+
+    .subtitle {
+        color: $primary-color;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: underline;
+        @media (max-width: $tablet) {
+            font-size: 12px;
+            padding: 10px 0;
+        }
+    }
+
+    .button-form {
+        padding: 15px 60px;
+        background-color: $primary-color;
+        color: $text-color-dark;
+        border-radius: 30px;
+        font-size: 16px;
+        border: $primary-color;
+        letter-spacing: 1px;
+        line-height: 18px;
+        margin: 30px 0 30px 0;
+        transition: 0.5s;
+
+        &:hover{
+            transform: scale(1.1);
+            transform: translateY(-5px);
+            cursor: pointer;            
+        }
+        @media (max-width: $tablet) {
+            font-size: 13px;
+            margin: 10px 0 30px 0;
+            padding: 10px 50px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 11px;
+        }
+    }
+
+    button {
+        &:hover {
+            cursor: pointer;
+            background-color: $background-color-white;
+            color: $text-color-dark;
+        }
+
+        &:active {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
