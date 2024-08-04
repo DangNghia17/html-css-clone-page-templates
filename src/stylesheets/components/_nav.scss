@@ -40,7 +40,8 @@
             border: 2px solid $background-color-white;
             background-color: transparent;
             border-radius: 30px;
-            width: 180px;
+            padding-left: 32px;
+            padding-right: 32px;
             letter-spacing: 1px;
             background-size: 200% 100%;
             background-image: linear-gradient(to left, $background-color-white 50%, transparent 50%);
@@ -91,7 +92,6 @@
 
         &_action {
             button {
-                width: 150px;
                 font-size: 16px;
             }
 
@@ -103,7 +103,7 @@
 }
 
 @media (max-width: $mobile) {
-
+    
     .header_main {
         @include flex($direction: column , $align: center);
         padding: 20px 20px;
@@ -126,15 +126,10 @@
         &_list {
             visibility: hidden;
             @include flex($direction: column ,$justify: space-between , $align: center);
-            height: 200px;
-            width: 300px;
             position: absolute;
             margin-top: 20px;
             margin-right: 30px;
             right: 0;
-            transition: all 0.5s ease-in-out 0.2s, visibility 0s linear 0.3s, z-index 0s linear 0.5s;
-            transform: translateY(-1em);
-            border-radius: 5%;
 
             &_item {
                 margin-right: 10px;
@@ -177,7 +172,4 @@
 
         }
     }
-
-
-
 }
