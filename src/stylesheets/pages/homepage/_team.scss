@@ -2,7 +2,7 @@
 
 .our_team {
     height: auto;
-
+        padding: 50px 0;;
     &_container {
         @include flex($direction: row, $align: start, $wrap : wrap, $justify: center);
     }

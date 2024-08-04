@@ -3,7 +3,7 @@
 .carousel {
     &_container {
         color: $text-color-dark;
-        padding: 60px 80px;
+        padding: 80px 80px;
         margin-left: 50px;
         margin-right: 50px;
         @include flex($direction: column, $align: center);
