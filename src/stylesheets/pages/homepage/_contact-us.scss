@@ -3,6 +3,10 @@
 .contact_us_section {
     color: $text-color-dark;
     padding-bottom: 60px;
+    @media (max-width: $tablet) {
+        padding-bottom: 0px;
+
+    }
 }
 
 .title_section {
@@ -51,6 +55,8 @@
         @include flex($direction: row-reverse, $justify: start, $align: flex-start);
         width: 65%;
         gap: 20px;
+        padding-bottom: 0px;
+
     }
 
     @media (max-width: $mobile) {
