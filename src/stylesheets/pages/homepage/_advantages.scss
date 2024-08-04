@@ -1,6 +1,7 @@
 @use "../../abstracts" as *;
 
 .card_container {
+    color : $text-color-white;
     background-color: $background-color-dark;
     @include flex($direction: row, $justify: center, $align: center);
     text-align: center;
@@ -38,6 +39,7 @@
     }
 
     &_section {
+        color : $text-color-white;
         @include flex($direction: column, $align: center);
         background-color: $background-color-dark;
     }
