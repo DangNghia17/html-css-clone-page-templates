@@ -1,3 +1,4 @@
+<!-- Our team Section -->
 <section class="our_team">
     <p class="our_team_title">Our Team</p>
     <div class="our_team_container">
@@ -118,6 +119,46 @@
     </include>
 </div>
 </section>
+<!-- Places Section -->
+<div class="places_section">
+    <h1 class="places_section_title">Places</h1>
+    <div class="places_list_container">
+        <div class="places_list_a">
+            <include src="./components/places-list-a.html" locals='{
+            "classList":"places_list_a_item",
+            "list": ["SAN FRANCISCO", "SOUTH LILIANA", "BLICKVIEW", "NEW RAVEN"]
+          }'>
+            </include>
+        </div>
+        <div class="places_list_select">
+            <include src="./components/places-list-select.html" locals='{
+            "classList": "places_list_select_item",
+            "list": ["SAN FRANCISCO", "SOUTH LILIANA", "BLICKVIEW", "NEW RAVEN"]
+          }'>
+            </include>
+        </div>
+    </div>
+    <div class="img_container">
+        <figure class="img">
+            <img src="../assets/images/desktop/place_img1.png" alt="Place IMG 1">
+        </figure>
+        <figure class="img">
+            <img src="../assets/images/desktop/place_img2.png" alt="Place IMG 2">
+        </figure>
+        <figure class="img">
+            <img src="../assets/images/desktop/place_img3.png" alt="Place IMG 3">
+        </figure>
+        <figure class="img">
+            <img src="../assets/images/desktop/place_img4.png" alt="Place IMG 4">
+        </figure>
+        <figure class="img">
+            <img src="../assets/images/desktop/place_img5.png" alt="Place IMG 5">
+        </figure>
+        <figure class="img">
+            <img src="../assets/images/desktop/place_img6.png" alt="Place IMG 6">
+        </figure>
+    </div>
+</div>
 <!-- Create An Account Section -->
 <section class="create_account_section">
     <div class="container">

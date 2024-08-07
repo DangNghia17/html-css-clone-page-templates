@@ -1,0 +1,71 @@
+@use "../../abstracts" as *;
+
+.places_section {
+    background-color: $background-color-gray;
+    color: $text-color-dark;
+    text-align: center;
+    padding: 0 20%;
+    @media (max-width: $tablet) {
+        padding: 0;
+    }
+
+    &_title {
+        font-size: 44px;
+        line-height: 48px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+
+        @media (max-width: $tablet) {
+            font-size: 32px;
+            line-height: 40px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 20px;
+            line-height: 23px;
+            padding-top: 30px;
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.img_container {
+    @include flex($direction: row, $justify: center, $align: center, $wrap: wrap);
+    padding: 30px 50px;
+    font-size: 18px;
+    line-height: 27px;
+    gap: 20px;
+
+    @media (max-width: $tablet) {
+        @include flex($direction: row, $justify: center, $align: center, $wrap: wrap);
+        gap: 10px;
+    }
+
+    @media (max-width: $mobile) {
+        @include flex($direction: row, $justify: center, $align: center, $wrap: wrap);
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        @media (max-width: $tablet) {
+            width: 192px;
+            height: 192px;
+        }
+
+        @media (max-width: $mobile) {
+            width: 116px;
+            height: 116px;
+        }
+    }
+}
