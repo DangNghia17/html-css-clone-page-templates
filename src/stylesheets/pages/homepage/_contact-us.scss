@@ -1,0 +1,290 @@
+@use "../../abstracts" as *;
+
+.contact_us_section {
+    color: $text-color-dark;
+    padding-bottom: 60px;
+    @media (max-width: $tablet) {
+        padding-bottom: 0px;
+
+    }
+}
+
+.title_section {
+    text-align: center;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    @media (max-width: $tablet) {
+        font-size: 32px;
+        line-height: 40px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 20px;
+        padding-top: 35px;
+        padding-bottom: 0;
+    }
+}
+
+.container_contact_us {
+    @include flex($direction: row, $justify: center, $align: flex-start);
+
+    @media (max-width: $tablet) {
+        @include flex($direction: row, $justify: space-around);
+        font-size: 11px;
+    }
+
+    @media (max-width: $mobile) {
+        @include flex($direction: column, $justify: space-around, $align: center);
+        font-size: 11px;
+    }
+}
+
+.get_in_touch_contact_container {
+    @include flex($direction: row, $justify: start, $align: flex-start);
+    gap: 30px;
+    width: 70%;
+    padding-bottom: 50px;
+
+    @media (max-width: $tablet) {
+        @include flex($direction: row-reverse, $justify: start, $align: flex-start);
+        width: 65%;
+        gap: 20px;
+        padding-bottom: 0px;
+
+    }
+
+    @media (max-width: $mobile) {
+        @include flex($direction: column-reverse, $justify: start, $align: flex-start);
+        gap: 0;
+        width: auto;
+        margin: 0 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.get_in_touch_container {
+    @include flex($direction: column);
+
+    @media (max-width: $tablet) {
+        width: auto;
+    }
+
+    .get_in_touch_title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 1px;
+
+        @media (max-width: $tablet) {
+            font-weight: normal;
+            font-size: 12px;
+        }
+    }
+
+    .get_in_touch_icon {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media (max-width: $tablet) {
+            padding-left: 0;
+        }
+    }
+
+    .get_in_touch_text {
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+
+        @media (max-width: $tablet) {
+            letter-spacing: 0;
+            line-height: 16px;
+            padding-left: 10px;
+        }
+    }
+
+    .location_container,
+    .email_container,
+    .phone_container {
+        transition: 0.5s;
+
+        @include flex($direction: row, $align:center);
+        margin-top: 20px;
+        @media (max-width: $tablet) {
+            margin-top: 10px;
+        }
+        &:hover {
+            transform: scale(1.1);
+            transform: translateY(-3px);     
+        }
+    }
+
+    .location_container {
+        @include flex($align: center);
+    }
+
+    .phone_container {
+        @include flex($justify: flex-start, $align: flex-start);
+    }
+}
+
+.contact_container {
+    @include flex($direction: column);
+    padding: 40px 3%;
+    margin: 0 17%;
+    box-shadow: -1px 3px 20px 3px #0003, 15px 9px 20px 0px #00000030;
+    border-radius: 5px;
+
+    @media (max-width: $tablet) {
+        margin: 0;
+        padding: 20px 0;
+        box-shadow: none;
+    }
+
+    .name_email_container {
+        @include flex($direction: row);
+    }
+
+    .name_container,
+    .email_container {
+        @media (max-width: $tablet) {
+            margin: 0 5px 0 0;
+            padding: 0;
+            width: 50%;
+        }
+    }
+
+    .message_container {
+        @include flex($direction: column);
+    }
+
+    .input_form {
+        background-color: $background-color-white;
+        padding: 10px 30px;
+        opacity: 0.8;
+        border-radius: 5px;
+        border: 1px solid gray;
+        margin: 15px 5px 20px 0px;
+        font-size: 14px;
+        transition: 0.5s;
+
+        @media (max-width: $tablet) {
+            margin: 7px 5px 7px 0;
+            padding: 7px 5px;
+            width: 100%;
+        }
+        &:focus {
+            transform: scale(1.1);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.button_form {
+    text-align: center;
+    button {
+        padding: 15px 60px;
+        background-color: $primary-color;
+        color: $text-color-dark;
+        border-radius: 30px;
+        font-size: 16px;
+        border: $primary-color;
+        letter-spacing: 1px;
+        line-height: 18px;
+        transition: 0.5s;
+
+        @media (max-width: $tablet) {
+            font-size: 11px;
+            margin: 10px 0 30px;
+            padding: 10px 50px;
+        }
+    
+        @media (max-width: $mobile) {
+            font-size: 11px;
+            margin: 10px 0 0;
+        }
+    
+        &:hover {
+            cursor: pointer;
+            background-color: $background-color-dark;
+            color: $text-color-white;
+            transform: scale(1.03);
+            transform: translateY(-3px);
+        }
+    
+        &:active {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
+
+.credit_follow_container {
+    width: 18%;
+    letter-spacing: 1px;
+
+    @media (max-width: $tablet) {
+        width: 27%;
+    }
+
+    @media (max-width: $mobile) {
+        width: auto;
+        margin: 0 20px;
+        padding-bottom: 50px;
+    }
+
+    .credit {
+        padding-bottom: 30px;
+
+        @media (max-width: $mobile) {
+            padding-bottom: 20px;
+        }
+
+        &_description {
+            padding-top: 12px;
+        }
+    }
+
+    .follow {
+        @include flex($direction: column);
+        gap: 30px;
+
+        @media (max-width: $mobile) {
+            gap: 10px;
+        }
+    }
+
+    .social_icons {
+        @include flex($direction: row, $wrap: wrap);
+        width: 60%;
+        gap: 30px;
+
+        @media (max-width: $tablet) {
+            gap: 15px;
+        }
+
+        @media (max-width: $mobile) {
+            width: auto;
+            gap: 10px;
+        }
+    }
+    .social_icon{
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+

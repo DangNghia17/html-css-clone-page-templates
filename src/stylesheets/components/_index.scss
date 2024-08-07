@@ -1,3 +1,8 @@
 @use "../abstracts/" as *;
+@forward "loader";
 @forward "nav";
+@forward "profile";
+@forward "card";
+@forward "card-2";
 @forward "places-list";
+@forward "nav-footer";

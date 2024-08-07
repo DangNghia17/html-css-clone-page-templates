@@ -1,0 +1,96 @@
+@use "../abstracts" as *;
+
+.container_footer {
+    background-color: $background-color-dark;
+    padding: 70px 50px 0 50px;
+
+    @media (max-width: $tablet) {
+        padding: 40px 30px 0px 30px;
+    }
+
+    @media (max-width: $mobile) {
+        padding: 30px 15px;
+    }
+
+    .top_footer {
+        color: $text-color-white;
+        @include flex($direction: row, $justify: center, $align: flex-start);
+
+        @media (max-width: $tablet) {
+            @include flex($direction: row, $justify: space-between, $align: flex-start);
+            font-size: 12px;
+        }
+
+        @media (max-width: $mobile) {
+            @include flex($direction: row, $justify: space-between, $align: flex-start, $wrap: wrap);
+        }
+
+        .footer_1 {
+            width: 25%;
+
+            @media (max-width: $tablet) {
+                width: 35%;
+            }
+        }
+
+        .footer_2 {
+            width: 20%;
+
+            @media (max-width: $mobile) {
+                width: 45%;
+            }
+
+            .footer_icon_container {
+                opacity: 0.7;
+                @include flex($direction: row);
+                gap: 30px;
+
+                @media (max-width: $tablet) {
+                    width: 19px;
+                    height: 19px;
+                }
+                .footer_icons{
+                    transition: 0.5s;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        transform: translateY(-10px);
+                    }
+                }
+            }
+        }
+
+        .footer_3 {
+            width: 20%;
+
+            @media (max-width: $tablet) {
+                width: 30%;
+            }
+
+            @media (max-width: $mobile) {
+                width: 100%;
+                padding-top: 20px;
+            }
+        }
+
+        .footer_title {
+            padding-bottom: 24px;
+            letter-spacing: 1px;
+        }
+
+        .footer_address,
+        .footer_email,
+        .footer_description {
+            opacity: 0.7;
+        }
+    }
+
+    hr {
+        width: 65%;
+        opacity: 0.3;
+
+        @media (max-width: $tablet) {
+            width: auto;
+        }
+    }
+}

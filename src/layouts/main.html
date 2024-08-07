@@ -1,3 +1,124 @@
+<!-- Our team Section -->
+<section class="our_team">
+    <p class="our_team_title">Our Team</p>
+    <div class="our_team_container">
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-1.png",
+        "profileName": "Craig Todd",
+        "profileRole": "CEO",
+        "profileDesc": "Like the majority of sales people, I visit a huge number of clients and prospects every month"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-2.png",
+        "profileName": "Jennie Graham",
+        "profileRole": "UX/UI Designer",
+        "profileDesc": "WordPress Version 2 0 3 Review"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-3.png",
+        "profileName": "Chase Meyer",
+        "profileRole": "Front-end Developer",
+        "profileDesc": "Search Engine Optimization And Advertising"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-4.png",
+        "profileName": "Vera Hopkins",
+        "profileRole": "UX Lead",
+        "profileDesc": "Differentiate Yourself And Attract More Attention Sales And Profits"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-5.png",
+        "profileName": "Eunice Wong",
+        "profileRole": "Marketing consultant",
+        "profileDesc": "Advertising Internet Online Opportunities To Explore"
+    }'></include>
+    <include src="./components/profile.html" locals='{
+        "profileImage": "../assets/images/mobile/person-6.png",
+        "profileName": "Johnny Vargas",
+        "profileRole": "Back-end Developer",
+        "profileDesc": "Maintain Your PC S Performance With PC Programs"
+    }'></include>
+</div>
+</section>
+<!-- Choose your plan section -->
+<p class="plan_title">Choose Your Plan</p>
+
+<div class="card_container">
+    <div class="plan_card primary">
+        <include src="./components/card.html" locals='{
+                "name_type": "SILVER",
+                "price": "49",
+                "account_type": "Pesonal",
+                "discspace_type": "25",
+                "uploads_per_day": "50"}'>
+        </include>
+    </div>
+    <div class="plan_card secondary">
+        <include src="./components/card.html" locals='{
+                "name_type": "GOLD ",
+                "price": "99",
+                "account_type": "Pesonal",
+                "discspace_type": "50",
+                "uploads_per_day": "500"}'>
+        </include>
+    </div>
+    <div class="plan_card dark">
+        <include src="./components/card.html" locals='{
+                "name_type": "PLATINUM",
+                "price": "299",
+                "account_type": "Team",
+                "discspace_type": "500",
+                "uploads_per_day": "Unlimited"}'>
+        </include>
+    </div>
+</div>
+<!-- Carousel Section -->
+<div class="carousel_container">
+    <img class="carousel_image" src="../assets/images/desktop/person-carousel.png" alt="hero-image" />
+    <div class="carousel_content_container">
+        <img class="prev_icon" src="../assets/icons/prev.svg" alt="prev-icon" />
+        <div class="carousel_title_container">
+            <h3 class="carousel_title">Ida Stephens — Noir Project</h3>
+            <p class="carousel_text">“Conversations can be a tricky business. Sometimes, decoding what is said with what
+                is meant is difficult at best. However, communication is a necessary tool in todays world. It’s often been
+                the case were one party completely miscommunicates to another due to a misunderstanding between parties.”</p>
+        </div>
+        <img class="next_icon" src="../assets/icons/next.svg" alt="next-icon" />
+    </div>
+    <img class="dot_nav" src="../assets/icons/dotnav.svg" alt="dot-nav-icon" />
+</div>
+
+<!-- Advantages Section  -->
+<section>
+<div class="advantages_section">
+    <h1 class="advantages">Advantages</p>
+        <h2 class="advantages_text">One more thing! Any time we start something new it is exciting and we are very
+            motivated and committed. </h2>
+</div>
+<div class="card_container">
+    <include src="./components/card-2.html" locals='{
+                "name" : "SECURE",
+                "image" : "../assets/icons/secure-icon.svg",
+                "title" : "YOUR DATA IS PROTECTED",
+                "description" : "No matter how far along you are in your sophistication as an amateur astronomer…"
+            }'>
+    </include>
+    <include src="./components/card-2.html" locals='{
+                "name" : "AESTHETIC",
+                "image" : "../assets/icons/aesthetic-icon.svg",
+                "title" : "UNIQUE DESIGN",
+                "description" : "Acres of Diamonds… you’ve read the famous story, or at least had it related to you."
+            }'>
+    </include>
+    <include src="./components/card-2.html" locals='{
+                "name" : "NEAT",
+                "image" : "../assets/icons/neat-icon.svg",
+                "title" : "ACCURATE IN DETAILS",
+                "description" : "Some days a motivational quote can provide a quick pick-me-up."
+            }'>
+    </include>
+</div>
+</section>
 <!-- Places Section -->
 <div class="places_section">
     <h1 class="places_section_title">Places</h1>
@@ -36,5 +157,95 @@
         <figure class="img">
             <img src="../assets/images/desktop/place_img6.png" alt="Place IMG 6">
         </figure>
+    </div>
+</div>
+<!-- Create An Account Section -->
+<section class="create_account_section">
+    <div class="container">
+      <h1 class="title">Create An Account</h1>
+      <form class="form_container">
+        <h2 class="title_form">SIGN UP</h2>
+        <input type="email" name="email" id="email" class="form_input" placeholder="Email">
+        <input type="password" name="password" id="password" class="form_input" placeholder="Password">
+        <input type="password" name="confirm_password" id="confirm_password" class="form_input" placeholder="Confirm Password">
+        <p class="subtitle">Already Have an account?</p>
+        <button type="submit" class="button-form">SIGN UP</button>
+      </form>
+    </div>
+  </section>
+<!-- Contact us section  -->
+<section class="contact_us_section">
+    <p class="title_section">Contact Us</p>
+    <div class="container_contact_us">
+        <div class="get_in_touch_contact_container">
+            <div class="get_in_touch_container">
+                <p class="get_in_touch_title">Get in touch</p>
+                <div class="location_container">
+                    <img src="../assets/icons/location.svg" alt="location" class="get_in_touch_icon" />
+                    <p class="get_in_touch_text">2300 W Arbutus Dr Citrus Springs, FL 34434, USA</p>
+                </div>
+                <div class="email_container">
+                    <img src="../assets/icons/mail.svg" alt="mail" class="get_in_touch_icon" />
+                    <p class="get_in_touch_text">contact@hofmannui.net</p>
+                </div>
+                <div class="phone_container">
+                    <img src="../assets/icons/phone.svg" alt="Search" class="get_in_touch_icon" />
+                    <div>
+                        <p class="get_in_touch_text" type="tel">793-891-7938</p>
+                        <p class="get_in_touch_text">512-915-5628</p>
+                        <p class="get_in_touch_text">952-775-6021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_container">
+                <div class="name_email_container">
+                    <div class="name_container">
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" placeholder="" value="Letha Terry" class="input_form"/>
+                    </div>
+                    <div class="email_container">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" placeholder="" value="letha.terry@ya" class="input_form"/>
+                    </div>
+                </div>
+                <div class="message_container">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="7" class="input_form"></textarea>
+                </div>
+                <div class="button_form">
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        <div class="credit_follow_container">
+            <div class="credit">
+                <div >Credit</div>
+                <div class="credit_description">In order to discuss the general function of the logo, we must firstly identify and define the
+                    environment where this will have to fulfill its function.</div>
+            </div>
+            <div class="follow">
+                <div>Follow</div>
+                <div class="social_icons">
+                    <img src="../assets/icons/pinterest.svg" alt="Pinterest" class="social_icon" />
+                    <img src="../assets/icons/linkedin.svg" alt="Linkedin" class="social_icon" />
+                    <img src="../assets/icons/google-plus.svg" alt="Google" class="social_icon" />
+                    <img src="../assets/icons/twitter.svg" alt="Twitter" class="social_icon" />
+                    <img src="../assets/icons/facebook.svg" alt="Facebook" class="social_icon" />
+                    <img src="../assets/icons/instagram.svg" alt="Instagram" class="social_icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Map Section  -->
+<div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6978.146779461519!2d-82.4765003!3d29.0148171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e86f549a688213%3A0x63d4ce5f3136f389!2s2300%20W%20Arbutus%20Dr%2C%20Citrus%20Springs%2C%20FL%2034434%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1722528018144!5m2!1svi!2s"
+      allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="tooltip">
+      2300 W Arbutus Dr<br>
+      Citrus Springs, FL 34434, USA
     </div>
 </div>
