@@ -90,7 +90,7 @@
             width: 80%;
             margin-bottom: 15px;
             padding: 10px 10px;
-            font-size: 11px;
+            font-size: 12px;
         }
         &:focus {
             transform: scale(1.1);
@@ -133,7 +133,7 @@
         }
 
         @media (max-width: $mobile) {
-            font-size: 11px;
+            font-size: 12px;
         }
     }
 
